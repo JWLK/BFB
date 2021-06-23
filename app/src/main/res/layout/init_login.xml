@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_weight="1.3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_logo_haslo"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="HealthCare"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:fontFamily="@font/nanum_square_regular"
+            android:letterSpacing="0.3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/init_login_guide"
+            android:textSize="15sp"
+            android:textColor="@color/colorGray64"
+            android:textAlignment="center"
+            android:fontFamily="@font/nanum_square_light"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="8dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="327dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_border"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="15dp"
+            android:hint=" ">
+
+            <EditText
+                android:id="@+id/login_id_edit"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:textColor="@color/colorGray64"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/nanum_square_regular"
+                android:hint="아이디"
+                android:layout_marginLeft="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="327dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_border"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="15dp"
+            android:hint=" ">
+
+            <EditText
+                android:id="@+id/login_pw_edit"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:textColor="@color/colorGray64"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/nanum_square_regular"
+                android:hint="비밀번호"
+                android:layout_marginLeft="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center">
+
+            <Switch
+                android:id="@+id/autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorGray64"
+                android:fontFamily="@font/nanum_square_regular"
+                android:letterSpacing="0"
+                android:lineSpacingExtra="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="계정 저장"
+                android:textSize="16sp"
+                android:textColor="@color/colorGray64"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/nanum_square_regular"
+                android:letterSpacing="0"
+                android:lineSpacingExtra="8dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray9E"
+            android:text="로그인"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:fontFamily="@font/nanum_square_extrabold"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginBottom="14dp"/>
+
+        <Button
+            android:id="@+id/regist_btn"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray9E"
+            android:text="회원 가입"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:fontFamily="@font/nanum_square_extrabold"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginBottom="23dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호를 잊어버리셨나요?"
+            android:textSize="15sp"
+            android:textColor="@color/colorGray64"
+            android:textAlignment="center"
+            android:fontFamily="@font/nanum_square_light"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="8dp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

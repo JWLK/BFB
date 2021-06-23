@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HASLO HealthCare</string>
+
+    #init Login
+    <string name="init_login_guide">회원님의 안전한 계정접속을 위해\n등록하신 아이디와 비밀번호를 입력해주세요.</string>
+
+    #main view
+    <string name="main_view_user_info">해슬로 센터에 오신것을 환영합니다.\n홍길동님, 안녕하세요</string>
+
+
+</resources>

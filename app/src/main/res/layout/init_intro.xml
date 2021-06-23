@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/parenting"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3222222">
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_bfb_logo_white"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="앱을 통해 수유량, 수유시간을 기록하고 관리하여\n육아 활동을 도와드립니다"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"
+                android:lineHeight="34sp"
+                android:fontFamily="@font/nanum_square_bold"
+                android:lineSpacingExtra="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+
+                <FrameLayout
+                    android:layout_width="2dp"
+                    android:layout_height="55dp"
+                    android:background="@color/colorGray9E"/>
+
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/colorWhite"
+                    android:text="접속 하기"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/nanum_square_bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
